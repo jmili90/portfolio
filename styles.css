@@ -7,7 +7,7 @@
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-position: right bottom, left bottom, right bottom;
         background-size: 500px, 200px, 300px;
-    }
+    }    
     .divheader {
         display: grid;
         grid-template-columns: auto auto;
@@ -19,9 +19,6 @@
         flex-direction: column;
         align-items: center; 
     }
-    img#header {    
-        width: 500px;
-    } 
     img#logo {
         max-width: 35px;
     }
@@ -36,8 +33,8 @@
         padding-bottom: 0.5em;
         background-color: #FE8361;
     }
-
     .nav_container {
+        display: flex;
         justify-content: space-between;
         align-items: center;
         display: flex;
@@ -64,19 +61,13 @@
         color: #F8F8F8;
         text-decoration: none;
     }
-
-
-
     section {    
         padding-left: 15%;
         padding-right: 15%;
         padding-top: 2%;
         padding-bottom: 2%;
-    /* background-color: #FE8361; */
         background-color: #F8F8F8;
-
     }
-
     iframe {
         display: block;
         margin-left: auto;
@@ -87,7 +78,6 @@
         background-color: none;
         margin: 4% 0px;
     }
-
     article {    
         margin-left: auto;
         margin-right: auto;
@@ -101,30 +91,35 @@
         display: grid;
         margin: 4% 0px;
     }
-
     img#aboutimg {
         width: 100%;
-
         margin: auto;
     }
     .images1 {
         flex-direction: column;
         display: flex;
     }
-
+    div#audio-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12px;
+        flex-direction: column;
+        background-image: url(https://www.svgrepo.com/show/54407/musical-notes-symbols.svg);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: 50px;        
+    }
     .div2 {
         display: grid;
         grid-template-columns: auto auto;
         align-items: center;  
-        margin: 4% 0px;
-        
+        margin: 4% 0px;        
     }
     img#skillsimg {    
         width: 100%;
-
         margin: auto;
     }
-
 
     form {
         display: flex;
@@ -154,8 +149,9 @@
         width: fit-content;
         height: 50px;
     }
-    input#fmessage {
-        height: 200px; 
+    textarea {
+        height: 120px;
+        resize: vertical;
     }
     .table {
         width: 400px;
@@ -172,9 +168,7 @@
     .w3-light-grey {
         background-color: #EEEEEE;
     }
-    .w3-round-xlarge {
-        border-radius: 16px;
-    }
+   
     .w3-container {
         display: table;
         clear: both;
